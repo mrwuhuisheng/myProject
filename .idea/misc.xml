@@ -7,7 +7,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/testModule/pom.xml" />
-        <option value="$PROJECT_DIR$/parentModule/pom.xml" />
       </list>
     </option>
   </component>
