@@ -1,6 +1,9 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+/myProject.iml
+/vcs.xml
+/misc.xml
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
