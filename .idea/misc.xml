@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../nacos-examples/nacos-spring-example/nacos-spring-discovery-example" />
+  </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
@@ -7,7 +10,30 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/testModule/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway_nacos/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway_nacos/orderService/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway_nacos/productService/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos-examples-master/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway_nacos/gatewayService/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../nacos-examples/nacos-spring-boot-example/nacos-spring-boot-config-example/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos-examples/nacos-spring-boot-example/nacos-spring-boot-config-mysql-example/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos-examples/nacos-spring-boot-example/nacos-spring-boot-discovery-example/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos-examples/nacos-spring-cloud-example/nacos-spring-cloud-config-example/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos-examples/nacos-spring-cloud-example/nacos-spring-cloud-config-multi-data-ids-example/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos-examples/nacos-spring-cloud-example/nacos-spring-cloud-discovery-example/nacos-spring-cloud-consumer-example/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos-examples/nacos-spring-cloud-example/nacos-spring-cloud-discovery-example/nacos-spring-cloud-provider-example/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos-examples/nacos-spring-cloud-example/nacos-spring-cloud-discovery-example/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos-examples/nacos-spring-example/nacos-spring-config-datasource-example/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos-examples/nacos-spring-example/nacos-spring-config-example/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos-examples/nacos-spring-example/nacos-spring-config-listener-example/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos-examples/nacos-spring-example/nacos-spring-config-multi-data-ids-example/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos-examples/nacos-spring-example/nacos-spring-config-pojo-example/pom.xml" />
+        <option value="$PROJECT_DIR$/../nacos-examples/nacos-spring-example/nacos-spring-discovery-example/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">

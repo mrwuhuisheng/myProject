@@ -1,0 +1,42 @@
+#########################高级版本##################################
+#启动类添加注解@EnabLeDiscoveryClient，项目添加坐标
+server:
+  port: 8080
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.0.102:8848
+        namespace: 6e8f5c03-b276-482f-8ff4-f331242d088d # 如果有命名空间，请填写
+        group: DEFAULT_GROUP # 可选，默认是 DEFAULT_GROUP
+        username: nacos
+        password: nacos
+      discovery:
+        server-addr: 192.168.0.102:8848
+        namespace: 6e8f5c03-b276-482f-8ff4-f331242d088d # 如果有命名空间，请填写
+        group: DEFAULT_GROUP # 可选，默认是 DEFAULT_GROUP
+        username: nacos
+        password: nacos
+    gateway:
+      discovery:
+        locator:
+          enabled: true                               # 让gateway可以发现nacos中的微服务
+      routes:                                         # 路由数组[路由就是指定当请求满⾜什么条件的时候转到哪个微服务]
+        - id: order-service
+          uri: lb://order-service                    # 指的是从nacos中按照名称获取微服务，并遵循负载均衡策略
+          order: 1                                    # 路由优先级 数字越低优先级越高
+          predicates:                                 # 断言
+            - Path=/order/**                        # 当请求路径满⾜Path指定的规则时,才进⾏路由换发
+          filters:
+            - StripPrefix=1                           # 拼接好url之后去掉1层路径也就是product
+            - AddRequestHeader=msg,abc
+        - id: product-service
+          uri: lb://product-service                      # 指的是从nacos中按照名称获取微服务，并遵循负载均衡策略
+          order: 1                                    # 路由优先级 数字越低优先级越高
+          predicates:                                 # 断言
+            - Path=/product/**                          # 当请求路径满⾜Path指定的规则时,才进⾏路由换发
+          filters:
+            - StripPrefix=1                           # 拼接好url之后去掉1层路径也就是product
+            - AddRequestHeader=msg,abc

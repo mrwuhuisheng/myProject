@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="nacos-spring-discovery-example:war">
+    <output-path>$PROJECT_DIR$/../nacos-examples/nacos-spring-example/nacos-spring-discovery-example/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>nacos-spring-discovery-example</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="nacos-spring-discovery-example-0.2.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="nacos-spring-discovery-example:war exploded" />
+    </root>
+  </artifact>
+</component>

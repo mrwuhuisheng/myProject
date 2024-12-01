@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/gateway_nacos/gatewayService/gatewayService.iml" filepath="$PROJECT_DIR$/gateway_nacos/gatewayService/gatewayService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway_nacos/gateway_nacos.iml" filepath="$PROJECT_DIR$/gateway_nacos/gateway_nacos.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/myProject.iml" filepath="$PROJECT_DIR$/.idea/myProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway_nacos/orderService/orderService.iml" filepath="$PROJECT_DIR$/gateway_nacos/orderService/orderService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway_nacos/productService/productService.iml" filepath="$PROJECT_DIR$/gateway_nacos/productService/productService.iml" />
       <module fileurl="file://$PROJECT_DIR$/testModule/testModule.iml" filepath="$PROJECT_DIR$/testModule/testModule.iml" />
     </modules>
   </component>

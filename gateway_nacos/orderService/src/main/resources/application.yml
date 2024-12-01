@@ -1,0 +1,22 @@
+#########################高级版本##################################
+#启动类添加注解@EnabLeDiscoveryClient，项目添加坐标
+server:
+  port: 8081
+spring:
+  application:
+    name: order-service
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.0.102:8848
+        namespace: 6e8f5c03-b276-482f-8ff4-f331242d088d # 如果有命名空间，请填写
+        group: DEFAULT_GROUP # 可选，默认是 DEFAULT_GROUP
+#        file-extension: properties # 配置内容的数据格式，可选
+        username: nacos
+        password: nacos
+      discovery:
+        server-addr: 192.168.0.102:8848
+        namespace: 6e8f5c03-b276-482f-8ff4-f331242d088d # 如果有命名空间，请填写
+        group: DEFAULT_GROUP # 可选，默认是 DEFAULT_GROUP
+        username: nacos
+        password: nacos
