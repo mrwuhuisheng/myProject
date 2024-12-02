@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class TestController {
 
-    @NacosValue("${useLocalCache:2342}")
+    @NacosValue("${user.name}")
     private String useLocalCache;
 
     @RequestMapping("/test")
