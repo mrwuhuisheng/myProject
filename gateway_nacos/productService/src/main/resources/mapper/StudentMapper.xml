@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hs.mapper.StudentMapper">
+    <!-- 这里写SQL映射语句 -->
+
+    <sql id="field">
+        id, user_name, age
+    </sql>
+
+    <select id="getByName" resultType="com.hs.entity.Student">
+        select
+            <include refid="field"/>
+        from
+            student
+        where
+            1 = 1
+            <if test="userName != null and userName != ''">
+                and user_name = #{userName}
+            </if>
+    </select>
+</mapper>
