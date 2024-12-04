@@ -29,7 +29,7 @@ public class StudentController {
     @RequestMapping("/getUser")
     public Student getUser(String name){
         QueryWrapper<Student> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq("name",name);
+        queryWrapper.eq("user_name",name);
         Student student = studentService.getOne(queryWrapper);
         return student;
     }
