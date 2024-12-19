@@ -1,4 +1,4 @@
-package com.hs;
+package com.hs.controller;
 
 import com.Bean.ListNode;
 import com.util.RedisUtil;

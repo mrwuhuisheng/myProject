@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/gateway_nacos/productService/pom.xml" />
         <option value="$PROJECT_DIR$/../nacos-examples-master/pom.xml" />
         <option value="$PROJECT_DIR$/gateway_nacos/gatewayService/pom.xml" />
+        <option value="$PROJECT_DIR$/simpleMoudule/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

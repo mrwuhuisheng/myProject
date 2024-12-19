@@ -7,10 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="productService" />
+        <module name="simpleMoudule" />
         <module name="orderService" />
-        <module name="gatewayService" />
         <module name="testModule" />
+        <module name="gatewayService" />
+        <module name="productService" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -44,6 +45,7 @@
       <module name="orderService (1)" target="1.5" />
       <module name="parentModule" target="1.5" />
       <module name="productService" target="1.8" />
+      <module name="simpleMoudule" target="1.8" />
       <module name="testModule" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -53,6 +55,7 @@
       <module name="gateway_nacos" options="-parameters" />
       <module name="orderService" options="-parameters" />
       <module name="productService" options="-parameters" />
+      <module name="simpleMoudule" options="-parameters" />
       <module name="testModule" options="-parameters" />
     </option>
   </component>
